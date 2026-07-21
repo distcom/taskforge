@@ -10,6 +10,18 @@ Pipeline stages:
     4. STRATEGIZE — Build execution plan with plugin assignments
     5. EXECUTE   — Run approved work units with dependency tracking
     6. FINALIZE  — Verify delivery and emit acceptance report
+
+Modules:
+    models      — Domain models (stages, sessions, plans, units)
+    engine      — Pipeline state machine with gate enforcement
+    plugins     — Plugin discovery, indexing, and assignment
+    strategy    — Intent extraction, requirement sealing, plan building
+    runner      — Dependency-aware execution coordinator
+    verify      — Six-check delivery verification
+    vault       — Session persistence (JSON serialization)
+    shell       — Cross-platform command executor
+    entrypoint  — Comprehensive canonical runtime
+    cli         — Command-line interface
 """
 
 __version__ = "1.0.0"
